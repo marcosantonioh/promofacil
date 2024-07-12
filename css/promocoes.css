@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor1: #41B06E;
+    --cor2: #2f8953;
+    --cor3: #141E46;
+    --cor4: #494949;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+.link, .drop-down li{
+    list-style: none;
+    height: 100%;
+    font-weight: 600;
+    /* padding: 0.5em 1em; */
+    cursor: pointer;
+    /* margin-top: 10px; */
+    padding: 10px 15px;
+}
+
+
+.drop-down li:hover{
+    background-color: var(--cor2);
+    color: white;
+}
+
+.drop-down{
+    position: absolute;
+    z-index: 2;
+    /* padding: 10px 0px; */
+    /* display: none; */
+    /* margin: 0.5rem -0.5rem; */
+    margin-top: 0px;
+    background-color: white;
+    color: var(--cor4);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+.cadastro:hover .drop-down{
+    display: block;
+}
+
+
+.cadastro .dropdown-icon{
+    font-size: 20px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.2s ease;
+    right: -5px;
+}
+
+.cadastro:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: white;
+}
+
+
+nav{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 90px;
+    width: 100%;
+    max-width: 1200;
+    margin: 0 auto;
+    /* padding: 2rem 1rem; */
+    background-color: var(--cor1);
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;    
+    color: white;
+    font-family: poppins;
+    font-weight: bold;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+
+.link a:hover{ 
+    color: rgb(234, 234, 234);
+    
+}
+
+
+.link a::after{
+   content: "";
+   position: absolute;
+   height: 2px;
+   width: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #41B06E;
+   transition: all 0.2s ease;
+   
+}
+
+
+
+.btn{
+    padding: 0.7rem 3rem;
+    /* background-color: white; */
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: solid white 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+.btn:hover{
+    border: solid white 1px;
+    background-color: white;
+    color: var(--cor1);
+}
+
+
+.btn2{
+    padding: 0.5rem 4rem;
+    background-color: white;
+    color:#2f8953;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: #ffffff solid 1px;
+}
+
+
+.btn2:hover{
+    color: #134226;
+    border: #494949 solid 1px;
+}
+
+
+
+.content {
+    max-width: 1200;
+    margin: 0 auto; 
+    padding: 8rem 7rem;
+    /* background-color: #1b3f29; */
+}
+
+
+
+
+/* -------------------- */
+
+
+
+
+.destaque-ofertas {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.destaque-ofertas h2 {
+    margin-bottom: 20px;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.carrossel-item {
+    min-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    flex: none;
+}
+
+.carrossel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carrossel-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.carrossel-item p {
+    margin: 5px 0;
+}
+
+.preco {
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.ver-mais {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.ver-mais:hover {
+    background-color: #2980b9;
+}
