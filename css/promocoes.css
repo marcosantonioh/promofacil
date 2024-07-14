@@ -17,52 +17,6 @@
 }
 
 
-.link, .drop-down li{
-    list-style: none;
-    height: 100%;
-    font-weight: 600;
-    /* padding: 0.5em 1em; */
-    cursor: pointer;
-    /* margin-top: 10px; */
-    padding: 10px 15px;
-}
-
-
-.drop-down li:hover{
-    background-color: var(--cor2);
-    color: white;
-}
-
-.drop-down{
-    position: absolute;
-    z-index: 2;
-    /* padding: 10px 0px; */
-    /* display: none; */
-    /* margin: 0.5rem -0.5rem; */
-    margin-top: 0px;
-    background-color: white;
-    color: var(--cor4);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-    font-size: 15px;
-}
-
-.cadastro:hover .drop-down{
-    display: block;
-}
-
-
-.cadastro .dropdown-icon{
-    font-size: 20px;
-    position: relative;
-    transform: rotate(0deg);
-    transition: 0.2s ease;
-    right: -5px;
-}
-
-.cadastro:hover .dropdown-icon{
-    transform: rotate(180deg);
-}
-
 
 img{
     width: 100%;
@@ -80,63 +34,167 @@ body{
 
 
 nav{
-    display: flex;
+    /* display: flex; 
+    align-items: center;
+    justify-content: space-between; */
     padding-left: 8%;
     padding-right: 8%;
-    height: 90px;
+    height: 140px;
     width: 100%;
     max-width: 1200;
     margin: 0 auto;
+    top: 0;
+    /* z-index: 99; */
     /* padding: 2rem 1rem; */
     background-color: var(--cor1);
+    /* gap: 2rem; */
+    /* position: fixed; */
+}
+
+
+nav .nav-top{
+    width: 100%;
+    height: 85px;
+    /* background-color: #e74c3c; */
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
 }
+
+nav .nav-bottom{
+    width: 100%;
+    height: 45px;
+    /* background-color: #1b4716; */
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.search-bar input[type="search"]{
+    background:transparent;
+    width: 70vh;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: #3f3f3f;
+}
+
+.search-bar i{
+    font-size: 1.5rem;
+    color: #979797;
+}
+
+
+
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background-color: #333; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para os itens da lista */
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Estilo para os links dentro dos itens da lista */
+ul li a {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    /* text-align: center; */
+    font-size: 15px;
+}
+
+/* Estilo para os submenus dropdown */
+ul li ul.dropdown {
+    
+    display: none;
+    width: 250px; /* Ajuste o valor conforme necessário */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 999;
+    padding: 0;
+}
+
+/* Estilo para os itens dentro do submenu dropdown */
+ul li ul.dropdown li {
+    /* padding: 10px 0; */
+    display: block;
+    /* margin: 20px 0; */
+}
+
+ul li ul.dropdown li a{
+    color: #313131;
+    letter-spacing: 0;
+}
+
+/* Exibir o submenu dropdown ao passar o mouse sobre o item pai */
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    /* padding: 10px 20px; */
+    font-size: 14px;
+}
+
+/* Estilo para os links ao passar o mouse */
+
+ul li ul.dropdown li a:hover {
+    background-color: #f2f2f2;
+    color: var(--cor1);
+    
+}
+
+ul li:hover a{
+    background-color: #ffffff;
+    /* border-radius: 5px; */
+    color: var(--cor1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 .nav-logo{
     max-width: 100px;
 }
-
-
-.nav-links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.link a{
-    position: relative;
-    padding-bottom: 0.75rem;    
-    color: white;
-    font-family: poppins;
-    font-weight: bold;
-    transition: 0.2s;
-    display: flex;
-    align-items: center;
-}
-
-
-.link a:hover{ 
-    color: rgb(234, 234, 234);
-    
-}
-
-
-.link a::after{
-   content: "";
-   position: absolute;
-   height: 2px;
-   width: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #41B06E;
-   transition: all 0.2s ease;
-   
-}
-
-
 
 .btn{
     padding: 0.7rem 3rem;
@@ -150,13 +208,11 @@ nav{
     transition: all 0.2s ease;
 }
 
-
 .btn:hover{
     border: solid white 1px;
     background-color: white;
     color: var(--cor1);
 }
-
 
 .btn2{
     padding: 0.5rem 4rem;
