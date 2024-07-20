@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PromoFácil - Promoções</title>
     <link rel="stylesheet" href="css/promocoes.css">
+    <link rel="icon" href="imagens/icone_promo.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
+
+    <div class="cookie-banner">
+        <div class="cookie-text">
+            <p>Utilizamos cookies para melhorar o desempenho e segurança do site, além de personalizar conteúdo e anúncios. Se desejar, você pode <a id="configCookies">configurar suas preferências</a> ou conferir nossa Política de Privacidade.</p>
+            <div class="button-container">
+                <button id="acceptCookies">Aceitar Cookies</button>
+            </div>
+        </div>
+    </div>
+    
+
+
     <nav class="nav-bar">
 
         <div class="nav-top">
@@ -32,7 +45,7 @@
         <div class="nav-bottom">
             <ul>
                 <li>
-                    <a href="">Categorias</a>
+                    <a href=""><i class="bx bx-menu"></i>Categorias</a>
     
                     <ul class="dropdown">
                         <li><a href="#">Alimentos e Bebidas</a></li>
@@ -45,9 +58,12 @@
                     </ul>
                 </li>
     
-                <li><a href="">Lojas</a></li>
+                <li><a href=""><i class="bx bx-store"></i>Lojas</a></li>
             </ul>
         </div>
+
+        
+
 
     </nav>
 
@@ -56,54 +72,32 @@
 
 
 
-    <section class="destaque-ofertas">
-        <h2>Promoções</h2>
-        <div class="carrossel">
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-                <h3>Mercado A</h3>
-                <p>Produto 1 em promoção</p>
-                <p class="preco">R$ 9,99</p>
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carousel-slide">
+            <div class="carousel-item">
+                <img src="/imagens/Buscape_Acao_Oferta_do_Dia_V2_Desk_3640e2b163.png" alt="Slide 1">
             </div>
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-                <h3>Mercado B</h3>
-                <p>Produto 2 em promoção</p>
-                <p class="preco">R$ 19,99</p>
+            <div class="carousel-item">
+                <img src="/imagens/Hero_Buscape_Prime_Day_2024_Desk_v2_7eed59d165.png" alt="Slide 2">
             </div>
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 3">
-                <h3>Mercado C</h3>
-                <p>Produto 3 em promoção</p>
-                <p class="preco">R$ 29,99</p>
+            <div class="carousel-item">
+                <img src="/imagens/Buscape_aniversario_fast_shop_7_V1_Desk_27f4ea0ebc.png" alt="Slide 3">
             </div>
         </div>
-        <div class="carrossel">
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-                <h3>Mercado A</h3>
-                <p>Produto 1 em promoção</p>
-                <p class="preco">R$ 9,99</p>
-            </div>
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-                <h3>Mercado B</h3>
-                <p>Produto 2 em promoção</p>
-                <p class="preco">R$ 19,99</p>
-            </div>
-            <div class="carrossel-item">
-                <img src="https://via.placeholder.com/300x200" alt="Produto 3">
-                <h3>Mercado C</h3>
-                <p>Produto 3 em promoção</p>
-                <p class="preco">R$ 29,99</p>
-            </div>
+        <div class="carousel-nav">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
         </div>
-        <button class="ver-mais">Ver Mais Ofertas</button>
-    </section>
+    </div>
 
 
+    <div class="recommended-offers">
+        <div class="offer">Oferta 1</div>
+        <div class="offer">Oferta 2</div>
+        <div class="offer">Oferta 3</div>
+        <div class="offer">Oferta 4</div>
+    </div>
 
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

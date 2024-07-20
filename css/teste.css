@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    height: 100vh;
+    position: relative;
+}
+
+.cookie-banner {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cookie-banner p {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    flex: 1; /* O texto ocupa o espaço restante */
+    padding-right: 10px; /* Espaço entre o texto e o botão */
+}
+
+.cookie-banner .button-container {
+    display: flex;
+    align-items: center;
+}
+
+.cookie-banner button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cookie-banner button:hover {
+    background-color: #0056b3;
+}
+
+.cookie-banner a {
+    color: #28a745;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
+}

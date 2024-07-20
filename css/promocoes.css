@@ -96,12 +96,25 @@ nav .nav-bottom{
 
 
 
+/********************/
 
 
+.nav-bottom ul li {
+    position: relative;
+}
 
+.nav-bottom ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
 
+.nav-bottom ul li a i {
+    font-size: 1.5rem;
+    margin-right: 5px; /* Space between icon and text */
+}
 
-
+/********************/
 
 ul {
     list-style: none;
@@ -246,73 +259,139 @@ ul li:hover a{
 
 /* -------------------- */
 
-
-
-
-.destaque-ofertas {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    border-radius: 10px;
+.carousel-container {
+    top: 20px;
+    width: 859px;
+    height: 336px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
 }
-
-.destaque-ofertas h2 {
-    margin-bottom: 20px;
-}
-
-.carrossel {
+.carousel-slide {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px 0;
-    background-color: #ffffff;
+    transition: transform 0.5s ease-in-out;
 }
-
-.carrossel-item {
-    min-width: 300px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: left;
-    flex: none;
+.carousel-item {
+    min-width: 859px;
+    height: 336px;
 }
-
-.carrossel-item img {
+.carousel-item img {
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
 }
-
-.carrossel-item h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
 }
-
-.carrossel-item p {
-    margin: 5px 0;
-}
-
-.preco {
-    font-size: 1.5em;
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.ver-mais {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
+.carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    height: 5rem;
+}
+
+
+
+
+/*******/
+
+.recommended-offers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.offer {
+    width: 320px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+/*************/
+
+
+
+
+
+.cookie-banner {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 90px;
+    max-width: 100%;
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie-banner .cookie-text {
+    display: flex;
+    font-size: 13px;
+    color: #333;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.cookie-banner .button-container {
+    margin-left: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Alinha o botão verticalmente no centro do banner */
+}
+
+.cookie-banner button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 25px 30px;
+    height: 20px;
+    width: 200px;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 1em;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.ver-mais:hover {
-    background-color: #2980b9;
+.cookie-banner button:hover {
+    background-color: #0056b3;
+    transform: scale(0.9);
 }
+
+.cookie-banner a {
+    color: #008cff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
+}
+
+/********************/
