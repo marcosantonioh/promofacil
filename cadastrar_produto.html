@@ -10,55 +10,64 @@
 </head>
 <body>
 
-
+    
     <div class="container">
         <div class="form-image">
-            <img src="imagens/cadastro_produto.svg" alt="">
+            <img src="imagens/cadastro_produto.svg" alt="Cadastro de Produto">
         </div>
         <div class="form">
-            <form action="#">
+            <form id="offerForm">
                 <div class="form-header">
                     <div class="title">
                         <h1>CADASTRAR PRODUTO</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="login.html">Entrar</a></button>
+                        <button type="button"><a href="login.html">Entrar</a></button>
                     </div>
                 </div>
 
                 <div class="input-group">
+                    
+
                     <div class="input-box">
-                        <label for="nomeProduto">Nome do produto</label>
-                        <input id="nomeProduto" type="text" name="nomeProduto" placeholder="Digite aqui" required>
+                        <label for="valorAntes">Preço de antes</label>
+                        <input id="valorAntes" type="number" name="valorAntes" placeholder="R$ 00,00" required>
                     </div>
 
                     <div class="input-box">
-                        <label for="typeProduct">Tipo do produto</label>
-                        <input id="typeProduct" type="text" name="typeProduct" placeholder="Digite aqui" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="totalEstoque">Quantidade em estoque</label>
-                        <input id="totalEstoque" type="number" name="totalEstoque" placeholder="Digite aqui" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="valor">Preço</label>
+                        <label for="valor">Preço ofertado</label>
                         <input id="valor" type="number" name="valor" placeholder="R$ 00,00" required>
                     </div>
 
+                    <div class="input-box">
+                        <label for="DescriçãoProduto">Descrição do Produto</label>
+                        <input id="DescriçãoProduto" type="text" name="DescriçãoProduto" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="productImage">Imagem do Produto (50x50)</label>
+                        <input id="productImage" type="file" name="productImage" accept="image/*" required>
+                    </div>
+                </div>
+
+
+                <div class="botoes">
+
+                    <div class="continue-button2">
+                        <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+                    </div>
+
+                    <div class="continue-button">
+                        <button type="submit">Continuar</button>
+                    </div>
                     
-
                 </div>
-
-                <div class="continue-button">
-                    <a href="#"><button>Continuar</button></a>
-                </div>
-                <div class="continue-button2">
-                    <a href="index.html"><button>Cancelar</button></a>
-                </div>
+                
             </form>
         </div>
     </div>
+
+
 </body>
 
 
