@@ -551,3 +551,152 @@ header .image img {
     color: #fff; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsivo para telas pequenas */
+@media (max-width: 768px) {
+    nav {
+        /* flex-direction: row; */
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+
+    .link a {
+        padding: 0.5rem 1rem;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header .image {
+        width: 70%;
+        position: relative;
+        margin: 5px auto;
+    }
+
+    header .content {
+        padding: 1rem;
+    }
+
+    .section-carts, .section-cards, .section-image-text, .section-image-pesquisa {
+        padding: 40px;
+    }
+
+    .cart-container, .cards-container {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    .cart, .card {
+        width: 50%;
+        max-width: 300px;
+    }
+
+    .section-image-text img, .section-image-pesquisa img {
+        width: 50%;
+        margin: 0;
+    }
+
+    .section-image-text .text-content, .section-image-pesquisa .text-content {
+        margin: 0;
+    }
+
+    .footer {
+        padding: 40px;
+        /* flex-direction: column; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section, .footer-icons {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-icons ul {
+        /* flex-direction: column; */
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-icons ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+/* Responsivo para telas menores que 480px */
+@media (max-width: 480px) {
+    nav {
+        padding: 0 2%;
+    }
+
+    .nav-logo {
+        max-width: 80px;
+    }
+
+    .link a {
+        font-size: 14px;
+    }
+
+    header .content h1 {
+        font-size: 2.5rem;
+    }
+
+    header .content p {
+        font-size: 1rem;
+    }
+
+    .section-carts, .section-cards, .section-image-text, .section-image-pesquisa {
+        padding: 20px;
+    }
+
+    .cart, .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .section-image-text h1, .section-image-pesquisa h1 {
+        font-size: 2rem;
+    }
+
+    .section-image-text h3, .section-image-pesquisa h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-section, .footer-icons {
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        margin-top: 10px;
+    }
+}

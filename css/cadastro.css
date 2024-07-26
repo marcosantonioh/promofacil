@@ -331,3 +331,58 @@ a:hover{
 
 
  */
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .img {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .input-div {
+        grid-template-columns: 10% 90%;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .img{
+        display: none;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .input-div {
+        grid-template-columns: 12% 88%;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+}
