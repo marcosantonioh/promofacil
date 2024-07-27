@@ -1,66 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    height: 100vh;
-    position: relative;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.cookie-banner {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 15px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 800px;
-    position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    border-radius: 10px;
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #3498db;
+}
+
+nav{
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #004274;
+    position: relative;
+    height: 70px;
 }
 
-.cookie-banner p {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    font-size: 16px;
-    color: #333;
-    margin: 0;
-    flex: 1; /* O texto ocupa o espaço restante */
-    padding-right: 10px; /* Espaço entre o texto e o botão */
+.logo{
+    color: #fff;
 }
 
-.cookie-banner .button-container {
+nav ul{
     display: flex;
+    gap: 30px;
     align-items: center;
 }
 
-.cookie-banner button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+nav ul li{
+    list-style-type: none;
 }
 
-.cookie-banner button:hover {
-    background-color: #0056b3;
-}
-
-.cookie-banner a {
-    color: #28a745;
+nav ul li a{
     text-decoration: none;
-    cursor: pointer;
+    color: #fff;
 }
 
-.cookie-banner a:hover {
-    text-decoration: underline;
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #004274;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
 }
