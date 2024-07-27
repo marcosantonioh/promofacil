@@ -20,21 +20,8 @@
 
 
 
-.link, .drop-down li{
-    list-style: none;
-    height: 100%;
-    font-weight: 600;
-    /* padding: 0.5em 1em; */
-    cursor: pointer;
-    /* margin-top: 10px; */
-    padding: 10px 15px;
-}
 
 
-.drop-down li:hover{
-    background-color: var(--cor2);
-    color: white;
-}
 
 .drop-down{
     position: absolute;
@@ -43,15 +30,41 @@
     display: none;
     /* margin: 0.5rem -0.5rem; */
     margin-top: 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: var(--cor4);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
     font-size: 15px;
+    
+}
+
+
+.link, .drop-down li{
+    list-style: none;
+    height: 100%;
+    font-weight: 600;
+    /* padding: 0.5em 1em; */
+    cursor: pointer;
+    /* margin-top: 10px; */
+    padding: 10px 15px;
+
+}
+
+.drop-down li:hover{
+    
+    background-color: var(--cor2);
+    color: white;
 }
 
 .cadastro:hover .drop-down{
     display: block;
 }
+
+
+.drop-down li a:hover{
+    color: white;
+}
+
+
 
 
 .cadastro .dropdown-icon{
@@ -70,6 +83,10 @@
 img{
     width: 100%;
     display: flex;
+}
+
+.logo{
+    width: 10%;
 }
 
 a{
@@ -111,13 +128,14 @@ nav{
 
 .link a{
     position: relative;
-    padding-bottom: 0.75rem;    
+    padding: 0.2rem;    
     color: #494949;
     font-family: poppins;
     font-weight: bold;
     transition: 0.2s;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 
@@ -217,7 +235,7 @@ header .content h1 {
     margin-bottom: 1rem;
     font-family: Poppins, sans-serif;
     font-size: 3rem;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     line-height: 3rem;
 }
@@ -480,94 +498,100 @@ header .image img {
 
 
 .footer {
-    position: relative;
     background-color: #333;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 100px;
+    padding: 20px;
+    text-align: center;
 }
 
-.image {
-    /* flex: 1; */
-    width: 10em;
-    margin-right: 200px; 
-    margin-bottom: 200px; 
-}
-
-.footer-section, .footer-icons {
-    flex: 1;
-    margin-right: 20px; 
+.footer .image img {
+    width: 150px;
     margin-bottom: 20px;
 }
 
-.footer-section:last-child, .footer-icons {
-    margin-right: 0; 
+.footer-section {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+    vertical-align: top;
 }
 
-.footer-section h3, .footer-icons h3 {
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
     margin-bottom: 10px;
 }
 
-.footer-section ul, .footer-icons ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li, .footer-icons ul li {
-    margin-bottom: 5px; 
-}
-
-.footer-section ul li a, .footer-icons ul li a {
+.footer-section ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 14px;
 }
 
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
 
 .footer-icons {
-    flex-basis: 100%; 
-    margin-top: 20px; 
-}
-
-.footer-icons h3 {
-    margin-bottom: 10px; 
-    font-size: 1.2em; 
+    margin-top: 20px;
 }
 
 .footer-icons ul {
-    display: flex; 
-    justify-content: flex-start; 
-    align-items: center; 
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: inline-flex;
 }
 
 .footer-icons ul li {
-    margin-right: 10px; 
-}
-
-.footer-icons ul li:last-child {
-    margin-right: 0; 
+    margin: 0 10px;
 }
 
 .footer-icons ul li a {
     color: #fff;
-    font-size: 34px; 
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .footer-icons ul li a:hover {
-    color: #41B06E; 
+    color: var(--cor1);
 }
 
 .footer p {
-    position: absolute; 
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    color: #fff; 
+    margin-top: 20px;
+    font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .footer-section {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .footer-icons {
+        margin-top: 20px;
+    }
+
+    .footer-icons ul {
+        display: block;
+    }
+
+    .footer-icons ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
 
 
 
@@ -599,6 +623,9 @@ header .image img {
         overflow: hidden;
     }
 
+    .logo{
+        width: 20%;
+    }
 
     .link a{
         height: 0;
@@ -688,6 +715,7 @@ header .image img {
         margin-top: 20px;
     }
 }
+
 
 /* Responsivo para telas menores que 480px */
 @media (max-width: 480px) {
