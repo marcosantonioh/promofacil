@@ -44,8 +44,8 @@ nav{
     /* display: flex; 
     align-items: center;
     justify-content: space-between; */
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
     height: 140px;
     width: 100%;
     max-width: 1200;
@@ -107,6 +107,25 @@ nav .nav-bottom{
 .logo{
     width: 10%;
 }
+
+.perfil{
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.perfil i{
+    display: flex;
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
 
 /********************/
 

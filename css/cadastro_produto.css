@@ -76,6 +76,7 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 50px;
 }
 
 .login-button button:hover {
