@@ -669,6 +669,7 @@ header .image img {
     }
 
     header .image {
+        left: 2%;
         width: 70%;
         position: relative;
         margin: 5px auto;
@@ -676,6 +677,15 @@ header .image img {
 
     header .content {
         padding: 1rem;
+    }
+
+    .container .content h1{
+        font-size: 40px;
+    }
+
+
+    .container .content p{
+        font-size: 10px;
     }
 
     .section-carts, .section-cards, .section-image-text, .section-image-pesquisa {
