@@ -108,7 +108,12 @@ nav .nav-bottom{
     width: 10%;
 }
 
+
+
+
+ 
 .perfil{
+    position: relative;
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -116,6 +121,7 @@ nav .nav-bottom{
     justify-content: center;
     width: 40px;
     height: 40px;
+    cursor:pointer;
 }
 
 .perfil i{
@@ -124,6 +130,48 @@ nav .nav-bottom{
     font-weight: 600;
     font-size: 1.3em;
 }
+
+
+/* 
+
+.perfil {
+    position: relative;
+    cursor: pointer;
+} */
+
+
+.dropdown1{
+    display: none;
+    position: absolute;
+    left: 0%;
+    /* right: 0; */
+    top: 100%;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 10;
+    
+}
+
+.dropdown1 a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+}
+
+.dropdown1 a i {
+    margin-right: 8px;
+}
+
+.dropdown1 a:hover {
+    background-color: #ddd;
+}
+
 
 
 

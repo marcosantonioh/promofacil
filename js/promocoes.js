@@ -58,3 +58,33 @@ if (localStorage.lgpd == "sim"){
 }else{
     msgCookies.classList.add('mostrar')
 }
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const perfilLink = document.getElementById('perfilLink');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    perfilLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita o comportamento padrão do link
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (!perfilLink.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
+
+    const configLink = document.getElementById('configLink');
+    configLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita o comportamento padrão do link
+        window.location.href = 'gerenciar_perfil.html'; // Substitua pelo URL da página de configurações do empresário
+    });
+});

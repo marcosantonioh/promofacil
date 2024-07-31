@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações do Empresário</title>
+    <link rel="stylesheet" href="css/gerenciar_perfil.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-top">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagens/logo_branca__promo_facil.svg">
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <i class="bx bx-search"></i>
+                <input type="search" name="pesquisar" id="search" placeholder="pesquisar">
+            </div>
+
+            <div class="perfil" id="perfil">
+                <a href="#" id="perfilLink">
+                    <i class="bx bxs-user"></i>
+                </a>
+                <div class="dropdown" id="dropdownMenu">
+                    <a href="#"><i class="bx bxs-user"></i> Nome do Usuário</a>
+                    <a href="gerenciar_perfil.html" id="configLink"><i class="bx bx-cog"></i> Configurações</a>
+                    <a href="#"><i class="bx bx-log-out"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" id="editInfo"><i class="bx bx-edit"></i> Editar Informações</a></li>
+                <li><a href="#" id="newPromotion"><i class="bx bx-plus-circle"></i> Cadastrar Nova Promoção</a></li>
+                <li><a href="promocoes.html" id="backToPromotions" class="voltar"><i class="bx bx-left-arrow-alt"></i> Voltar</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div id="currentInfo" class="section">
+                <h1>Informações Atuais</h1>
+                <div class="info">
+                    <img src="imagens/user-profile.jpg" alt="Foto de Perfil" class="profile-pic">
+                    <p><strong>Nome:</strong> João da Silva</p>
+                    <p><strong>Email:</strong> joao.silva@example.com</p>
+                    <p><strong>Telefone:</strong> (11) 98765-4321</p>
+                </div>
+            </div>
+
+            <div id="editInfoSection" class="section" style="display: none;">
+                <h1>Editar Informações</h1>
+                <form id="configForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" value="João da Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="joao.silva@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="********" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeNegocio">Nome do Negócio</label>
+                        <input type="text" id="nomeNegocio" name="nomeNegocio" value="Mercado João" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="enderecoNegocio">Endereço do Negócio</label>
+                        <input type="text" id="enderecoNegocio" name="enderecoNegocio" value="Rua Exemplo, 123" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefoneNegocio">Telefone do Negócio</label>
+                        <input type="tel" id="telefoneNegocio" name="telefoneNegocio" value="(11) 98765-4321" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricaoNegocio">Descrição do Negócio</label>
+                        <textarea id="descricaoNegocio" name="descricaoNegocio" required>Mercado com variedade de produtos.</textarea>
+                    </div>
+                    <button type="submit" class="btn">Salvar Configurações</button>
+                </form>
+            </div>
+
+            <!-- Adicione uma seção para cadastrar nova promoção se necessário -->
+            <div id="newPromotionSection" class="section" style="display: none;">
+                <h1>Cadastrar Nova Promoção</h1>
+                <!-- Formulário de cadastro de promoção -->
+                <!-- Adicione seu código para cadastrar promoção aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/gerenciar_perfil.js"></script>
+</body>
+</html>
