@@ -87,4 +87,34 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault(); // Evita o comportamento padrão do link
         window.location.href = 'gerenciar_perfil.html'; // Substitua pelo URL da página de configurações do empresário
     });
+
+
+    const logoutLink = document.getElementById('logoutLink');
+    logoutLink.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita o comportamento padrão do link
+        window.location.href = 'promocoes_user.html'; // Substitua pelo URL da página de logout
+    });
 });
+
+
+
+
+
+
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+

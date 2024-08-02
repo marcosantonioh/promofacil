@@ -104,10 +104,8 @@ inputs.forEach(input => {
 
 
 
-function redirectToConfirmation(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+function redirectToConfirmation(event) {// Impede o envio padrão do formulário
 
-    // Redireciona para a página de confirmação
     window.location.href = "cadastro_confirmado.html";
 }
 
@@ -151,4 +149,37 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+});
+
+
+
+
+
+const scrollToTopBtn = document.getElementById('scroll-to-top');
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const loginButton = document.getElementById('loginButton');
+    loginButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita o comportamento padrão do botão
+        window.location.href = 'promocoes_user.html'; // Substitua pelo URL da página de promoções
+    });
 });

@@ -588,6 +588,40 @@ header .image img {
     font-size: 14px;
 }
 
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor1); /* cor de fundo do botão */
+    color: #fff; /* cor do ícone */
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 1;
+    /* visibility: hidden; */
+}
+
+.scroll-to-top:hover{
+    background-color: var(--cor2);
+}
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .footer-section {
         display: block;
@@ -741,6 +775,11 @@ header .image img {
         margin-top: 20px;
     }
 }
+
+
+
+
+
 
 
 /* Responsivo para telas menores que 480px */
