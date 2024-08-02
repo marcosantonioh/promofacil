@@ -48,40 +48,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const editInfoLink = document.getElementById('editInfo');
-    const newPromotionLink = document.getElementById('newPromotion');
-    const backToPromotionsLink = document.getElementById('backToPromotions');
-    
+document.addEventListener('DOMContentLoaded', function() {
+    const backToPromotions = document.getElementById('backToPromotions');
+    const editInfo = document.getElementById('editInfo');
+    const newPromotion = document.getElementById('newPromotion');
+    const myInfo = document.getElementById('myInfo');
     const currentInfoSection = document.getElementById('currentInfo');
     const editInfoSection = document.getElementById('editInfoSection');
     const newPromotionSection = document.getElementById('newPromotionSection');
-    
-    // Exibir informações atuais ao carregar a página
-    currentInfoSection.style.display = 'block';
-    
-    // Mostrar seção de editar informações
-    editInfoLink.addEventListener('click', (e) => {
+
+    // Redireciona para a página de promoções ao clicar em "Voltar"
+    backToPromotions.addEventListener('click', function(e) {
         e.preventDefault();
-        currentInfoSection.style.display = 'none';
+        window.location.href = 'promocoes.html';
+    });
+
+    // Mostra a seção de editar informações ao clicar em "Editar Informações"
+    editInfo.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideAllSections();
         editInfoSection.style.display = 'block';
-        newPromotionSection.style.display = 'none';
     });
 
-    // Mostrar seção de cadastrar nova promoção
-    newPromotionLink.addEventListener('click', (e) => {
+    // Redireciona para a página de cadastro de promoção ao clicar em "Cadastrar Nova Promoção"
+    newPromotion.addEventListener('click', function(e) {
         e.preventDefault();
+        window.location.href = 'cadastrar_produto.html'; // Substitua pelo caminho da sua página de cadastro de promoção
+    });
+
+    // Mostra a seção de informações atuais ao clicar em "Minhas Informações"
+    myInfo.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideAllSections();
+        currentInfoSection.style.display = 'block';
+    });
+
+    function hideAllSections() {
         currentInfoSection.style.display = 'none';
         editInfoSection.style.display = 'none';
-        newPromotionSection.style.display = 'block';
-    });
-
-    // Voltar para a tela de promoções
-    backToPromotionsLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        currentInfoSection.style.display = 'block';
-        editInfoSection.style.display = 'none';
         newPromotionSection.style.display = 'none';
-    });
+    }
 });
