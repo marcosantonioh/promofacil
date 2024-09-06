@@ -1,12 +1,5 @@
 /* Estilos gerais do corpo */
-
-
-:root {
-    --cor1: #41B06E;
-    --cor2: #2f8953;
-    --cor3: #141E46;
-    --cor4: #494949;
-}
+@import url("../../global/global.css");
 
 
 body {

@@ -1,6 +1,8 @@
 /* nav{
     background-color: var(--cor1);
 } */
+@import url("../../global/global.css");
+@import url("../../partials/index/style.css");
 
 *{
     padding: 0;
