@@ -193,7 +193,7 @@ body{
     }
 
     .logo{
-        width: 20%;
+        width: 30%;
     }
 
 
@@ -327,22 +327,55 @@ body{
         flex-direction: column;
         align-items: self-start;
         padding: 0;
+        gap: 2em;
+        position: relative;
     }
 
     .section-image-text img{
-        width: 50%;
-        margin-top: 20px;
+        width: 45%;
+        top: 190px;
+        position: absolute;
     }
 
     .section-image-text .text-content{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: start;
+        /* align-items: center; */
+        /* justify-content: flex-start; */
+        /* text-align: start; */
         margin: 0;
         padding: 20px;
+        gap: 1.5em;
     }
+
+    .section-image-text .text-content h1{
+        line-height: 0.8;
+        font-size: 2.4em;
+    }
+
+
+    .section-image-text .text-content h3 {
+        font-size: 1.2em;
+        margin-bottom: 0;
+    }
+
+    .section-image-text .text-content p {
+        font-size: 1em;
+        text-align: end;
+        margin-bottom: 0;
+    }
+
+    .container-p{
+        /* background-color: #1E0342; */
+        display: flex;
+        justify-content: end;
+        margin-top: 30px;
+    }
+
+    .section-image-text .text-content button {
+        margin-top: 50px;
+    }
+
 
 
 
@@ -377,32 +410,40 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 80px 0;
     gap: 3em;
+    padding: 0 0 40px 0;
+    /* position: relative; */
 }
 
 
 .section-image-pesquisa .text-content {
     /* background-color: #6b4f90; */
-    width: 300px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+    margin: 0;
+    padding: 0;
 }
 
+.section-image-pesquisa .retangulo{
+    position: relative;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
 
- 
 .section-image-pesquisa .container-img {
     /* background-color: #00a; */
-    width: 15em;
-    height: 15em;
+    width: 10em;
+    height: 10em;
     margin-right: 0;
-
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
 }
-
-
 
 .section-image-pesquisa .text-content .container-btn{
     display: flex;
@@ -414,7 +455,6 @@ body{
 .section-image-pesquisa h1 {
     line-height: 1em;
     color: #1E0342;
-    margin: 10px 0;
     font-size: 2.4em;
 }
 
@@ -422,6 +462,7 @@ body{
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 0;
+    width: 50%;
 }
 
    
