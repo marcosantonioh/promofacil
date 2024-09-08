@@ -1,9 +1,12 @@
 /* Estilos gerais do corpo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url("../../global/global.css");
+/* @import url("../../partials/index/style.css"); */
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: poppins;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -15,17 +18,15 @@ body {
 /* Estilos da barra de navegação */
 .nav-bar {
     background-color: var(--cor1);
-    padding: 10px 20px;
+    padding: 10px 50px;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    
 }
 
 .nav-top {
@@ -59,7 +60,7 @@ body {
     font-size: 16px;
     width: 300px;
 }
-
+/* 
 .perfil {
     position: relative;
 }
@@ -80,8 +81,8 @@ body {
     flex-direction: column;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     z-index: 1000;
-    width: max-content; /* Ajusta a largura para o conteúdo */
-    min-width: 150px; /* Define uma largura mínima */
+    width: max-content; 
+    min-width: 150px; 
 }
 
 .perfil:hover .dropdown {
@@ -102,6 +103,18 @@ body {
 
 .perfil .dropdown a:hover {
     background-color: #f4f4f4;
+} */
+
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil img{
+    width: 3em;
+    height: 3em;
 }
 
 /* Estilos principais do conteúdo */
@@ -114,25 +127,28 @@ body {
     overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
+
 .sidebar {
-    width: 180px;
+    width: 250px;
     background-color: #333;
     padding: 20px;
     height: calc(100vh - 70px); /* Ajusta a altura para a viewport minus o nav */
     position: fixed;
-    top: 70px; /* Ajustar conforme a altura do nav */
+    top: 70px; /*Ajustar conforme a altura do nav*/
     left: 0;
     overflow-y: auto;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
+    margin-top: 50px ;
     list-style: none;
     padding: 0;
+    display: grid;
+    gap: 20px;
 }
 
 .sidebar ul li {
-    margin-bottom: 20px;
 }
 
 .sidebar ul li a {
@@ -140,13 +156,13 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-    background-color: var(--cor1);
+    background-color: gray;
 }
 
 .sidebar ul li a i {
@@ -188,9 +204,11 @@ h1 {
 #currentInfo{
     background-color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
+    padding: 30px;
+    height: 80vh;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -240,6 +258,7 @@ h1 {
 .btn:hover {
     background-color: var(--cor2);
 }
+
 
 .section {
     display: none;
