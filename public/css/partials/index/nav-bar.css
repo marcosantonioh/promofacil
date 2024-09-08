@@ -37,6 +37,12 @@ nav{
     gap: 2rem;
 }
 
+/* 
+#nav-links li{
+    display: flex;
+    align-items: center;
+} */
+
 
 .link a{
     position: relative;

@@ -183,42 +183,40 @@
 
 
 
-
-
-
 .section-image-pesquisa {
     background-color: #FFF5E0;
     display: flex;
     align-items: center;
     padding: 0px;
+    justify-content: space-around;
+    padding: 40px 0;
 }
 
-.section-image-pesquisa img {
-    margin-left: 230px;
-    margin-top: 130px;
-    margin-bottom: 130px;
-    /* margin: 110px; */
-    width: 30%; 
-    height: auto;
-    object-fit: cover;
-}
 
 .section-image-pesquisa .text-content {
-    margin-left: 10%;
+    /* background-color: #6b4f90; */
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+
+.section-image-pesquisa .container-img {
+    /* background-color: #00a; */
+    /* margin: 130px 0px 130px 230px; */
+    /* margin: 110px; */    
+    margin-right: 70px;
+}
+
 
 .section-image-pesquisa h1 {
     line-height: 1em;
     color: #1E0342;
     margin: 10px 0;
     font-size: 3em;
-}
-
-.section-image-pesquisa h3 {
-    color: #1E0342;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
 }
 
 .section-image-pesquisa p {
