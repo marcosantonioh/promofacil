@@ -15,7 +15,7 @@ body {
     width: 90%;
     height: 80vh;
     display: flex;
-    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212); */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
 .form-image {
@@ -32,20 +32,22 @@ body {
 }
 
 .form {
+    margin: 0;
     color: var(--cor1);
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    padding: 3rem;
+    /* background-color: #ff6b6b; */
+    padding: 1rem;
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     display: flex;
     justify-content: space-between;
+    /* background-color: aqua; */
 }
 
 .login-button {
@@ -87,6 +89,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 0;
+    margin:0;
 }
 
 .input-box {
@@ -145,11 +148,23 @@ body {
     color: #000000c0;
 }
 
+
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* gap: 3em; */
+    /* background-color: rgb(177, 177, 177); */
+}
+
+
 .continue-button button {
     font-weight: 700;
     color: white;
-    width: 100%;
-    margin-top: 2.5rem;
+    width: 18em;
+    /* margin-top: 2.5rem; */
     border: none;
     background-color: var(--cor1);
     padding: 0.62rem;
@@ -166,8 +181,8 @@ body {
 .continue-button2 button {
     font-weight: 700;
     color: var(--cor2);
-    width: 100%;
-    margin-top: 0.5rem;
+    width: 18em;
+    /* margin-top: 0.5rem; */
     border: solid 1px var(--cor1);
     background: none;
     /* background-color: var(--cor1); */
